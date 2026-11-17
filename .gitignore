@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data and generated artifacts (do not commit medical data or large weights)
+data/BraTS2020/**
+!data/BraTS2020/README.md
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.ckpt
+logs/*
+!logs/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Local experiment files
+*.nii
+*.nii.gz
+*.npy
+*.npz
